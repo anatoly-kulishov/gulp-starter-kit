@@ -1,68 +1,68 @@
-// Variables for Slick
-// -------------------
-$slider-btn: #fff;
-$slider-btn-active: #007bff;
-$url-img: "../img"; // 	    #{$url-img}
-
-// Styles for Slick
-// ----------------
-
-/* Слайдер */
-.slick-slider {
-    min-width: 0;
-}
-
-.slick-dots li button:before,
-.slick-prev:before,
-.slick-next:before {
-    display: none;
-}
-
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-
-/* Лента слайдов */
-.slick-track {
-    display: flex;
-    align-items: flex-start;
-}
-
-
-.slick-dots li {
-    height: auto;
-}
-
-/* Конкретный слайдер */
-.slider {
-    position: relative;
-
-}
-
-.slider .slick-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 9;
-    transform: translate(0, 0);
-    margin: -30px 0px 0px 0px;
-    font-size: 0;
-    width: 50px;
-    height: 50px;
-    opacity: .6;
-}
-
-.slider .slick-arrow:hover {
-    opacity: 1;
-}
-
-.slider .slick-arrow.slick-prev {
-    left: 2.5%;
-    background: url('#{$url-img}/svg/base-icons/sl-arrow_l.svg') 0 0 / 100% no-repeat;
-}
-
-.slider .slick-arrow.slick-next {
-    right: 2.5%;
-    background: url('#{$url-img}/svg/base-icons/sl-arrow_r.svg') 0 0 / 100% no-repeat;
-}
-
+//// Variables for Slick
+//// -------------------
+//$slider-btn: #fff;
+//$slider-btn-active: #007bff;
+//$url-img: "../img"; // 	    #{$url-img}
+//
+//// Styles for Slick
+//// ----------------
+//
+///* Слайдер */
+//.slick-slider {
+//    min-width: 0;
+//}
+//
+//.slick-dots li button:before,
+//.slick-prev:before,
+//.slick-next:before {
+//    display: none;
+//}
+//
+///* Ограничивающая оболочка */
+//.slick-list {
+//    overflow: hidden;
+//}
+//
+///* Лента слайдов */
+//.slick-track {
+//    display: flex;
+//    align-items: flex-start;
+//}
+//
+//
+//.slick-dots li {
+//    height: auto;
+//}
+//
+///* Конкретный слайдер */
+//.slider {
+//    position: relative;
+//
+//}
+//
+//.slider .slick-arrow {
+//    position: absolute;
+//    top: 50%;
+//    z-index: 9;
+//    transform: translate(0, 0);
+//    margin: -30px 0px 0px 0px;
+//    font-size: 0;
+//    width: 50px;
+//    height: 50px;
+//    opacity: .6;
+//}
+//
+//.slider .slick-arrow:hover {
+//    opacity: 1;
+//}
+//
+//.slider .slick-arrow.slick-prev {
+//    left: 2.5%;
+//    background: url('#{$url-img}/svg/base-icons/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+//}
+//
+//.slider .slick-arrow.slick-next {
+//    right: 2.5%;
+//    background: url('#{$url-img}/svg/base-icons/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+//}
+//

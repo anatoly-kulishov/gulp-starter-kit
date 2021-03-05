@@ -7,19 +7,6 @@ jQuery(document).ready(function ($) {
      * */
     $('html').removeClass('no-js');
 
-    /**
-     *  One Page Scroll
-     *  ---------------
-     * */
-    // $("main").onepage_scroll({
-    //     sectionContainer: "section", // контейнер, к которому будет применяться скролл
-    //     easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
-    //     animationTime: 1000, // время анимации
-    //     pagination: true, // скрыть или отобразить пагинатор
-    //     updateURL: false // обновлять URL или нет
-    // });
-
-
     // if ($("html").hasClass("no-js")) {
     //     $('.hamburger').addClass('is-active');
     // } else {
@@ -105,39 +92,9 @@ jQuery(document).ready(function ($) {
     //     ]
     // });
 
-    /**
-     *  Homemade Slider
-     *  ---------------
-     * */
-    // function changePicture() {
-    //     let image1 = $('.image-1');
-    //     let image2 = $('.image-2');
-    //     let image3 = $('.image-3');
-    //     image1.removeClass('image-1').addClass('image-2');
-    //     image2.removeClass('image-2').addClass('image-3');
-    //     image3.removeClass('image-3').addClass('image-1');
-    // }
-    //
-    // let timer;
-    // const refreshIntervalId = setInterval(changePicture, 4000);
-    //
-    // $('.image').click(function () {
-    //     changePicture();
-    //
-    //     clearInterval(refreshIntervalId);
-    //
-    //     if (!timer) {
-    //         timer = setInterval(changePicture, 4000);
-    //     } else {
-    //         timer = clearInterval(timer);
-    //     }
-    //
-    // })
-    // 
-   
-   $(document).ready(function () {
+    $(document).ready(function () {
         setEqualHeight($(".div"));
-   });
+    });
 
 });
 

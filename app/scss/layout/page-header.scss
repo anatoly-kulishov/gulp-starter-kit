@@ -1,15 +1,19 @@
 @import "../_utilities/variables";
 
 .page-header {
-
-    &__frame {}
+    position: sticky;
+    top: 0;
+    z-index: 10;
 
     &__wrapper {
         display: flex;
         align-items: center;
+        padding: 15px 0;
 
         font-family: $base_font-stack;
 
+        background-color: $white;
+        box-shadow: 0 4px 12px rgba(160, 161, 158, 0.2);
         z-index: 10;
     }
 }

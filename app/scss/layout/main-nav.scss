@@ -1,0 +1,21 @@
+@import "../_utilities/variables";
+
+.main-nav {
+    ul {
+        @media(min-width: $lg) {
+            @include list-reset();
+
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                font-weight: 500;
+                @include transition();
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@ $base_font-stack : $main_font, $font-stack;
 $secondary_font-stack : $secondary_font, $font-stack-serif;
 
 $font_size_big: 52px;
-$font_size_middle: 28px;
+$font_size_middle: 36px;
 $font_size_small: 16px;
 
 $line-height-base: 1.4;
@@ -47,7 +47,6 @@ $success: #28a745 !default;
 $dark: #343a40 !default;
 $primary: #007bff !default;
 $green: #47B748 !default;
-$yellow: #E79E00 !default;
 
 // Base Variables
 // --------------
@@ -61,11 +60,11 @@ $header-color: #061106;
 $link-color: #061106;
 $placeholder: #B3B3B3;
 
-$selection-bg: $yellow;
+$selection-bg: $dark;
 $selection-color: $white;
 
 $scrollbar-box-color: $white;
-$scrollbar-color: $yellow;
+$scrollbar-color: $dark;
 
 // Functions
 // ---------
@@ -100,7 +99,7 @@ $scrollbar-color: $yellow;
     list-style: none;
 }
 
-@mixin transition($property: all, $duration: .3s, $timing: ease-in-out) {
+@mixin transition($property: all, $duration: .25s, $timing: ease) {
     transition: $property $duration $timing;
 }
 
