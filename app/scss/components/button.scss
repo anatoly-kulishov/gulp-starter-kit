@@ -1,0 +1,120 @@
+@import "../_utilities/variables";
+
+// Button Variables
+// ----------------
+$btn-bg: $primary;
+$btn_color: $white;
+$btn-font-size: 18px;
+
+$btn-bg-hover: darken($primary, 4%);
+// ----------------
+
+.button,
+.btn {
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    padding: 14px;
+
+    font-family: $base_font-stack;
+    font-size: $btn-font-size;
+    line-height: 1.1;
+
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $btn-color;
+    background-color: $btn-bg;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+
+    @include transition(all, .3s);
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    &--danger {
+        background-color: $danger;
+        $btn-bg-hover: darken($danger, 4%);
+
+        &:focus,
+        &:hover {
+            background-color: $btn-bg-hover !important;
+        }
+    }
+
+    &--success {
+        background-color: $success;
+        $btn-bg-hover: darken($success, 4%);
+
+        &:focus,
+        &:hover {
+            background-color: $btn-bg-hover !important;
+        }
+    }
+
+    &--primary {
+        background-color: $primary;
+        $btn-bg-hover: darken($primary, 4%);
+
+        &:focus,
+        &:hover {
+            background-color: $btn-bg-hover !important;
+        }
+    }
+
+    &:disabled {
+        opacity: .7;
+        cursor: not-allowed;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $btn-bg-hover;
+    }
+}
+
+.gumines {
+    position: absolute;
+    background: rgba(0, 0, 0, .15);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.gumines.show {
+    -webkit-animation: ripple .75s ease-out;
+    animation: ripple .75s ease-out;
+}
+
+@-webkit-keyframes ripple {
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple {
+    to {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+

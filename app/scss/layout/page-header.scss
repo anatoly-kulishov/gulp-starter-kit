@@ -1,0 +1,15 @@
+@import "../_utilities/variables";
+
+.page-header {
+
+    &__frame {}
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        font-family: $base_font-stack;
+
+        z-index: 10;
+    }
+}

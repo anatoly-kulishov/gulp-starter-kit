@@ -1,0 +1,115 @@
+// Variables for fonts
+// -------------------
+$main_font: 'Fira Code';
+$secondary_font: 'Roboto';
+
+$font-stack: -apple-system, BlinkMacSystemFont, Segoe UI,
+Arial, Roboto, Oxygen, Ubuntu, Cantarell,
+Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+$font-stack-serif: -apple-system, BlinkMacSystemFont, Segoe UI,
+Arial, Roboto, Oxygen, Ubuntu, Cantarell,
+Fira Sans, Droid Sans, Helvetica Neue, serif;
+
+$base_font-stack : $main_font, $font-stack;
+$secondary_font-stack : $secondary_font, $font-stack-serif;
+
+$font_size_big: 52px;
+$font_size_middle: 28px;
+$font_size_small: 16px;
+
+$line-height-base: 1.4;
+$font-weight-base: 400;
+
+// Variables for file path
+// -----------------------
+$url-fonts: "../fonts"; //		#{$url-fonts}
+$url-img: "../img"; // 	    #{$url-img}
+
+// Variables for media
+// -------------------
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$smd: 767px;
+$sm: 576px;
+
+// Main Color
+// ----------
+
+$white: #fff !default;
+$black: #000 !default;
+
+$danger: #dc3545 !default;
+$success: #28a745 !default;
+
+$dark: #343a40 !default;
+$primary: #007bff !default;
+$green: #47B748 !default;
+$yellow: #E79E00 !default;
+
+// Base Variables
+// --------------
+$text-base-color: $black;
+$bg-base: $white;
+
+$bg-header: $white;
+$header-color: #061106;
+
+
+$link-color: #061106;
+$placeholder: #B3B3B3;
+
+$selection-bg: $yellow;
+$selection-color: $white;
+
+$scrollbar-box-color: $white;
+$scrollbar-color: $yellow;
+
+// Functions
+// ---------
+@function rem($px) {
+    @return ($px / 16) +rem;
+}
+
+// Mixins
+// ------
+@mixin font($family, $url, $weight, $style, $display: swap) {
+    font-family: $family;
+    src: $url;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $display;
+}
+
+@mixin bg($size: cover, $position: center, $repeat: no-repeat) {
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin img-cover($fit: cover, $position: center) {
+    object-fit: $fit;
+    object-position: $position;
+}
+
+@mixin list-reset($margin: 0, $padding: 0) {
+    margin: $margin;
+    padding: $padding;
+    list-style: none;
+}
+
+@mixin transition($property: all, $duration: .3s, $timing: ease-in-out) {
+    transition: $property $duration $timing;
+}
+
+@mixin position($position, $z) {
+    position: $position;
+    z-index: $z;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+

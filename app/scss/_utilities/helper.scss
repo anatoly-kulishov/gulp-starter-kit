@@ -1,0 +1,84 @@
+@import "variables";
+
+.col, [class^="col-"], [class^="col-lg-"], [class^="col-xl-"], [class^="col-md-"], [class^="col-sm-"] {
+    box-shadow: 0 0 0 1.5px $danger;
+    background: rgba(255, 45, 82, .1);
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.title {
+    margin: 0 0 50px;
+
+    font-family: $base_font-stack;
+    font-size: 48px;
+    line-height: 1.2;
+    color: $black;
+    text-align: center;
+}
+
+@media(max-width: $smd) {
+    .title {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 640px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.bg-option {
+    @include bg();
+}
+
+.map-frame {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.post-padding {
+    padding: 5px 20px;
+}
+
+.locked {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 7px;
+
+    outline: 0;
+}
+
+.menu-opened .mobile-menu {
+    display: block !important;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: $dark;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after {
+    background-color: $dark;
+}

@@ -1,0 +1,19 @@
+@import "_utilities/variables";
+
+.logo {
+    max-width: 60px;
+    height: 100%;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.page-main {
+    height: 50vh;
+}

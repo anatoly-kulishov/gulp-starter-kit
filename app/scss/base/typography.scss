@@ -1,0 +1,42 @@
+@import "../_utilities/variables";
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasansextralight.woff2) format('woff2'), 100, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasanslight.woff2) format('woff2'), 200, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasansregular.woff2) format('woff2'), 400, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firacodemedium.woff2) format('woff2'), 500, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasanssemibold.woff2) format('woff2'), 600, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasansbold.woff2) format('woff2'), 700, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasansextrabold.woff2) format('woff2'), 800, normal)
+}
+
+@font-face {
+    @include font($main_font, url(#{$url-fonts}/Firasansbook.woff2) format('woff2'), 900, normal)
+}

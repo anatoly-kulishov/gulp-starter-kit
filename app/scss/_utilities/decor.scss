@@ -1,0 +1,92 @@
+/* Эффект расширения текста при наведение */
+.effect_extension {
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.effect_extension span {
+    display: inline-block;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    color: #000000;
+}
+
+.effect_extension span:nth-child(even) {
+    color: #000;
+    letter-spacing: -40px;
+}
+
+.effect_extension:hover span:nth-child(even) {
+    letter-spacing: 0;
+}
+
+.effect_extension:hover span:nth-child(2) {
+    transition-delay: 0s;
+}
+
+.effect_extension:hover span:nth-child(4) {
+    transition-delay: .5s;
+}
+
+.effct_extension:hover span:nth-child(6) {
+    transition-delay: 1s;
+}
+
+.effect_extension:hover span:nth-child(8) {
+    transition-delay: 1.5s;
+}
+
+.menyu-skolyasuced * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.menyu-skolyasuced li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.2em;
+    overflow: hidden;
+}
+
+.menyu-skolyasuced a {
+    padding: 0 0.5em 0 0.2em;
+    color: #505;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.menyu-skolyasuced a:before,
+.menyu-skolyasuced a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.menyu-skolyasuced a:before {
+    right: 100%;
+    display: block;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #505;
+}
+
+.menyu-skolyasuced a:after {
+    padding: 0 0.5em 0 0.2em;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    content: attr(data-hover);
+    color: tomato;
+    white-space: nowrap;
+}
+
+.menyu-skolyasuced li:hover a,
+.menyu-skolyasuced .acedasun a {
+    transform: translateX(100%);
+}
